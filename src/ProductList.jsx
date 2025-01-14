@@ -368,6 +368,7 @@ function ProductList() {
                     {/*Similarly like the above plant.name show other details like description and cost*/}
                     <button
                       className="product-button"
+                      disabled={addedToCart[plant.name]}
                       onClick={() => handleAddToCart(plant)}
                     >
                       Add to Cart
