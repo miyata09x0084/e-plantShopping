@@ -216,8 +216,11 @@ body {
   background-color: #45a049;
 }
 
-.product-button.added-to-cart {
-  background-color: grey; /* Grey when product is added */
+/* 追加済みのボタンスタイル */
+.product-button.added-to-cart,
+.product-button:disabled {
+  background-color: grey; /* 灰色 */
+  cursor: not-allowed; /* カーソルを変更 */
 }
 @media (max-width: 1200px) {
   .product-card {
